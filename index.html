@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cute To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌻To-Do List🌻</h1>
+    <div class="theme-switch">
+      <button id="changeToLight">Light Theme</button>
+      <button id="changeToDark">Dark Theme</button>
+      <button id="changeToPastel">Pastel Theme</button>
+    </div>
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Add a task..." required />
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+    <div class="compliment" id="compliment"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
